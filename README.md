@@ -1,28 +1,36 @@
+
+
+1.git clone https://github.com/BasetMamshpoor/Blog
+
 ----------------------------back-end----------------------
 
+2.cd ./BackEnd
 
-git clone https://github.com/BasetMamshpoor/Blog
+3.Scripts\activate
 
-cd ./BackEnd
+4.cd ./blog
 
-Scripts\activate
+5.python manage.py migrate
 
-cd ./blog
+6.pip install -r requirements.txt (If there is an error, go to the next step)
 
-pip install -r requirements.txt
+7.python manage.py createsuperuser
 
-python manage.py createsuperuser
+--create admin with username and password 
 
-create admin with username and password 
-ps: characters hidden!
+---ps: characters hidden!
 
-python manage.py runserver
+8.python manage.py runserver
 
 ------------------------------front-end---------------------
 new terminal
 
-cd ./FrontEnd
+9.cd ./FrontEnd
 
-npm i
+10.npm i
 
-npm start
+11.npm start
+
+
+
+By default, there is no blog, please login first, then create a post in the new blog section of the navbar
