@@ -28,8 +28,8 @@ const useAxios = () => {
             Cookies.set('authTokens', JSON.stringify({ refresh: authTokens.refresh, ...res.data }))
             req.headers.Authorization = `Bearer ${res.data.access}`
         }).catch(() => {
-            // Cookies.remove('authTokens')
-            // naviagte('/login')
+            Cookies.remove('authTokens')
+            naviagte('/login')
         });
         return req
     })
